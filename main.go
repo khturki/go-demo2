@@ -25,7 +25,7 @@ Hello Khaled from Docker!
 }
 
 func main() {
-	fmt.Println("Hello Khaled")
+	fmt.Println("Hello Khaled From Golang")
 	http.HandleFunc("/", handler)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
