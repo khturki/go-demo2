@@ -19,13 +19,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
   \____\_______/
 
 	
-Hello Khaled from Docker!
+Hello Khaled from Docker!!
 
 `)
 }
 
 func main() {
-	fmt.Println("Hello Khaled")
+	fmt.Println("Hello Khaled From Golang project")
 	http.HandleFunc("/", handler)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
